@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      body {
+        color: white;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        background: linear-gradient(rgb(70, 145, 221), rgb(113, 243, 174));
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      .text-block {
+        background-color: rgb(241, 237, 237);
+        color: black;
+        padding: 10px;
+        width: 350px;
+        border-radius: 5px;
+        margin: auto;
+      }
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        border: 2px solid gray;
+        padding: 3px;
+      }
+    </style>
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>Fill your details</h2>
+    <form action="#">
+      <div class="text-block">
+        <div>Name : <input type="text" name="myName" placeholder="Name" /></div>
+        <div>
+          Address : <input type="text" name="myAddress" placeholder="Address" />
+        </div>
+        <br />
+        <div>
+          Email : <input type="email" name="myEmail" placeholder="Email" />
+        </div>
+        <br />
+        <!--input:email-->
+        <div>Date of Birth : <input type="date" name="myDate" /></div>
+        <br />
+        <div>Number : <input type="number" name="myNumber" /></div>
+        <br />
+        <div>
+          Select Gender : Male <input type="radio" name="myGender" /> Female
+          <input type="radio" name="myGender" /> Other
+          <input type="radio" name="myGender" />
+        </div>
+        <br />
+        <div>Are you eligible? <input type="checkbox" name="" /></div>
+        <br />
+        <div>
+          <label for="car">Country : </label>
+          <select name="myCar" id="car">
+            <!-- in label for="car" and select id="car" both are same -->
+            <option value="ind">India</option>
+            <option value="jpn">Japan</option>
+            <option value="amc">America</option>
+          </select>
+        </div>
+        <br />
+        <div>Write about your self :</div>
+        <div><textarea name="myText" cols="45" rows="5"></textarea></div>
+        <br />
+        <input type="submit" value="Submit Now" />
+        <!--input:submit-->
+        <input type="reset" value="Reset Now" />
+        <!--input:reset-->
+      </div>
+    </form>
+  </body>
+</html>
+
+<!-- Home work -->
+<!-- https://change-lives.netlify.app/ -->
